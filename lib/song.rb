@@ -50,7 +50,7 @@ class Song
     temp.pop
     index = temp.find_index('-')
     name_art = temp[0...index].join(" ")
-    song_n =temp[index+1...temp.length].join(" ")
+    song_n =temp[index+1...temp.length].join(" ") #explore gsub to delete .mp3 & split just at " - "
     temp_obj = self.new
     temp_obj.artist_name = name_art
     temp_obj.name = song_n
